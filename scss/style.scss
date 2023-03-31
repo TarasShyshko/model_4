@@ -1,0 +1,15 @@
+@import "fonts";
+@import "mixins";
+@import "variables";
+@import "body";
+@import "header";
+@import "footer";
+.wrapper{
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+
