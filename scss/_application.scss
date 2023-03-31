@@ -1,0 +1,30 @@
+@import "mixins";
+@import "fonts";
+@import "variables";
+.page{
+  background-color: $application-background;
+  &_application{
+    max-width: $maxWidthContainer;
+    height: 665px;
+    background-color: $application-background;
+    margin: 0 auto;
+
+  }
+  &_left{
+
+  }
+}
+.left{
+  width: 540px;
+  height: 340px;
+  text-align: center;
+  margin: 210px 0 0 0;
+  p{
+    font-size: 17px;
+    color: $application-text;
+  }
+  h1{
+font-size: 35px;
+    color: $application-bold  ;
+  }
+}
