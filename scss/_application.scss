@@ -2,15 +2,21 @@
 @import "fonts";
 @import "variables";
 .page{
+
   background-color: $application-background;
   &_application{
     max-width: $maxWidthContainer;
     height: 665px;
     background-color: $application-background;
     margin: 0 auto;
-
+@media (max-width: $minWidth) {
+  height: 1050px;
+}
   }
   &_left{
+
+  }
+  &_right{
 
   }
 }
@@ -18,13 +24,66 @@
   width: 540px;
   height: 340px;
   text-align: center;
-  margin: 210px 0 0 0;
+h1{
+  padding: 210px 0 0 0 ;
+  @media (max-width: $minWidth){
+    padding: 40px 0 0 0 ;
+  }
+}
+
+  @media(max-width: $minWidth){
+    text-align: center;
+    margin: 40px 0 0 245px;
+
+  }
   p{
     font-size: 17px;
     color: $application-text;
+    padding: 10px 40px 0px 40px;
   }
+
   h1{
 font-size: 35px;
     color: $application-bold  ;
+  }
+}
+.right{
+  margin: -295px 0px 0px 590px;
+  h3{
+    font-size: 25px;
+  }
+  img{
+    width: 8px;
+    height: 8px;
+  }
+  input[type="text" i],[type="tel" i],[type="email" i],[type="message"] {
+    padding: 1px 10px;
+    width: 590px;
+    height: 50px;
+    border-radius: 5px;
+    border: solid $border 1px;
+  }
+li{
+  color:$application-text;
+  padding: 5px;
+}
+  a{
+    color: $bottom-color;
+  }
+  button{
+    width: 365px;
+    height: 50px;
+    text-align: center;
+    margin-left: 110px;
+    color: $border-text;
+    background-color: $bottom-color;
+    border-radius: 50px;
+    border: 1px;
+  }
+  @media (max-width: $minWidth){
+    margin: 40px 0 0 210px;
+    h3{
+      margin-left: 150px;
+    }
   }
 }

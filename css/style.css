@@ -5,6 +5,9 @@
 @font-face {
   font-family: "Open Sans Regular";
 }
+/*- HEADER -*/
+/*- APPLICATION -*/
+/*- PAGE-SLIDER -*/
 * {
   margin: 0;
   padding: 0;
@@ -26,6 +29,9 @@ html, body {
 @font-face {
   font-family: "Open Sans Regular";
 }
+/*- HEADER -*/
+/*- APPLICATION -*/
+/*- PAGE-SLIDER -*/
 .header {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
   z-index: 10;
@@ -59,7 +65,7 @@ html, body {
 
 @media (max-width: 1024px) {
   .menu_body {
-    transform: translate(0px, -190%);
+    transform: translate(0px, -220%);
     width: 100%;
     height: 100%;
   }
@@ -152,6 +158,9 @@ html, body {
   }
 }
 
+/*- HEADER -*/
+/*- APPLICATION -*/
+/*- PAGE-SLIDER -*/
 @font-face {
   font-family: "Open Sans Regular";
 }
@@ -164,46 +173,145 @@ html, body {
   background-color: #f7f7f7;
   margin: 0 auto;
 }
+@media (max-width: 1024px) {
+  .page_application {
+    height: 1050px;
+  }
+}
 .left {
   width: 540px;
   height: 340px;
   text-align: center;
-  margin: 210px 0 0 0;
+}
+.left h1 {
+  padding: 210px 0 0 0;
+}
+@media (max-width: 1024px) {
+  .left h1 {
+    padding: 40px 0 0 0;
+  }
+}
+@media (max-width: 1024px) {
+  .left {
+    text-align: center;
+    margin: 40px 0 0 245px;
+  }
 }
 .left p {
   font-size: 17px;
   color: #6f7982;
+  padding: 10px 40px 0px 40px;
 }
 .left h1 {
   font-size: 35px;
   color: black;
 }
 
+.right {
+  margin: -295px 0px 0px 590px;
+}
+.right h3 {
+  font-size: 25px;
+}
+.right img {
+  width: 8px;
+  height: 8px;
+}
+.right input[type=text i], .right [type=tel i], .right [type=email i], .right [type=message] {
+  padding: 1px 10px;
+  width: 590px;
+  height: 50px;
+  border-radius: 5px;
+  border: solid black 1px;
+}
+.right li {
+  color: #6f7982;
+  padding: 5px;
+}
+.right a {
+  color: #357ab7;
+}
+.right button {
+  width: 365px;
+  height: 50px;
+  text-align: center;
+  margin-left: 110px;
+  color: white;
+  background-color: #357ab7;
+  border-radius: 50px;
+  border: 1px;
+}
+@media (max-width: 1024px) {
+  .right {
+    margin: 40px 0 0 210px;
+  }
+  .right h3 {
+    margin-left: 150px;
+  }
+}
+
 @font-face {
   font-family: "Open Sans Regular";
 }
-.page {
-  background-color: #f7f7f7;
+/*- HEADER -*/
+/*- APPLICATION -*/
+/*- PAGE-SLIDER -*/
+.slider {
+  background-color: white;
 }
-.page_application {
-  max-width: 1220px;
-  height: 665px;
-  background-color: #f7f7f7;
+.slider_item {
   margin: 0 auto;
+  height: 560px;
+  max-width: 1220px;
+  background-color: white;
 }
-.left {
-  width: 540px;
-  height: 340px;
+.slider_text {
+  padding: 70px 0 0 0;
   text-align: center;
-  margin: 210px 0 0 0;
+  font-size: 30px;
+  color: #333333;
 }
-.left p {
-  font-size: 17px;
-  color: #6f7982;
+.slider_blocks {
+  display: flex;
+  flex-direction: row;
+  padding: 45px 0 0 0;
 }
-.left h1 {
-  font-size: 35px;
-  color: black;
+.slider_block-1 {
+  width: 360px;
+  height: 320px;
+  text-align: center;
+  margin-left: 45px;
+}
+.slider_block-2 {
+  width: 360px;
+  height: 320px;
+  text-align: center;
+  margin-left: 45px;
+}
+.slider_block-3 {
+  width: 360px;
+  height: 320px;
+  text-align: center;
+  margin-left: 45px;
+}
+.slider h3 {
+  font-size: 24px;
+  color: #666666;
+  font-weight: 400;
+}
+.slider hr {
+  border: none;
+  background-color: #357ab7;
+  color: #357ab7;
+  width: 357px;
+  height: 1px;
+  margin: 24px 0 0 2px;
+}
+.slider p {
+  font-size: 16px;
+  color: #666666;
+  font-weight: 400;
+  margin-top: 35px;
 }
 
 .wrapper {

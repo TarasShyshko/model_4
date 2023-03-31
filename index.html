@@ -32,18 +32,89 @@
             </div>
         </div>
     </header>
-    <main class="page">
+    <div class="page">
         <div class="page_application">
             <div class="page_left-block left">
                 <div class="page_text1"><h1>Курси програмування у Луцьку</h1></div>
-                <div class="page_text2"><p>Сфера IT розвивається максимально швидко. Зараз дуже популярно здобувати освіту, що повязана з ІТ. Існує лише одна проблема - брак дійсно кваліфікованих спеціалістів в Україні. Під час навчання в університеті ми отримуємо мало практики і "живих", реальних кейсів. IT школа ОхІТ створила таку методику навчання, при якій за короткий час ви отримаєте необхідні знання. щоб стати IT спеціалістом. Чекаємо вас на нших курсах з
+                <div class="page_text2"><p>Сфера IT розвивається максимально швидко. Зараз дуже популярно здобувати
+                    освіту, що повязана з ІТ. Існує лише одна проблема - брак дійсно кваліфікованих спеціалістів в
+                    Україні. Під час навчання в університеті ми отримуємо мало практики і "живих", реальних кейсів. IT
+                    школа ОхІТ створила таку методику навчання, при якій за короткий час ви отримаєте необхідні знання.
+                    щоб стати IT спеціалістом. Чекаємо вас на нших курсах з
                     програмування в Луцьку. Старт наступного курсу 3 серпня.</p></div>
             </div>
-            <div class="page_right-block">
+            <div class="page_right-block right">
+                <h3>Зареєструватися на курси</h3>
+                <div class="page_register-content">
+                    <form>
+                        <ul>
+                            <li><label for="name">Ім'я <img src="images/required.png" alt=""></label></li>
+                            <li><input required type="text" id="name" name="name"
+                                       placeholder="Ім'я"></li>
+                            <li><label for="surname">Прізвище <img src="images/required.png" alt=""></label></li>
+                            <li><input required type="text" id="surname" name="surname"
+                                       placeholder="Прізвище"></li>
+                            <li><label for="message">Мене більше цікавить <img src="images/required.png" alt=""></label></li>
+                            <li><input required type="message" id="message" name="message"
+                                       placeholder="developer or QA"></li>
 
+                            <li><label for="tel">Телефон <img src="images/required.png" alt=""></label></li>
+                            <li><input required type="tel" id="tel" name="tel"
+                                       placeholder="Номер телефону: +380 XXX XX XX XXX"
+                                       pattern="\+380\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}">
+                            </li>
+                            <li><label for="email">Email <img src="images/required.png" alt=""></label></li>
+                            <li><input required type="email" id="email" name="email"
+                                       placeholder="Введіть емейл"></li>
+                            <li><label>
+                                <div class="page_checkbox"><input type="checkbox"/> Я погоджуюся із <a href="#">Політикою
+                                    конфеденційності</a></div>
+                            </label>
+                            </li>
+                            <li>
+                                <button type="submit">Відправити</button>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
             </div>
         </div>
-    </main>
+    </div>
+    <div class="page-slider slider">
+        <div class="slider_item item">
+            <div class="slider_text">Курс «Розробка сайтів»</div>
+            <div class="slider_blocks">
+                <div class="slider_block-1">
+                    <img src="images/course-icon-1.png">
+                    <h3>Розробка сайтів на WordPress</h3>
+                    <hr>
+                    <p>Курс складається з коротких навчальних відео, на яких ти пізнаєш основи WordPress, навчишся створювати сайти різної складності: від блогів до інтернет магазинів.
+                        Всі знання закріпиш за допомогою тестових
+                        завдань.</p>
+                </div>
+                <div class="slider_block-2">
+                    <img src="images/course-icon-2.png">
+                    <h3>Розробка сайтів на Drupal 9</h3>
+                    <hr>
+                    <p>
+                        Для створення чудових сайтів на Drupal 8, цеглинка за цеглинкою, ти пізнаєш секрети основних та додаткових Drupal-модулів
+                        (Views, Rules, Panels, Devel, Paragraph Ta
+                        багатьох інших).
+                    </p>
+                </div>
+                <div class="slider_block-3">
+                    <img src="images/course-icon-3.png">
+                    <h3>Ознайомлення з тестуванням</h3>
+                    <hr>
+                    <p>
+                        Для створення чудових сайтів на Drupal 8, цеглинка за цеглинкою, ти пізнаєш секрети основних та додаткових Drupal-модулів
+                        (Views, Rules, Panels, Devel, Paragraph Ta
+                        багатьох інших).
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script src="js/script.js"></script>

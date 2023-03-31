@@ -1,0 +1,61 @@
+@import "variables";
+@import "fonts";
+@import "mixins";
+.slider{
+  background-color: $slider-color;
+  &_item{
+    margin: 0 auto;
+    height: 560px;
+    max-width: $maxWidthContainer;
+    background-color: $slider-color;
+  }
+  &_text{
+    padding: 70px 0 0 0 ;
+    text-align: center;
+    font-size: 30px;
+    color: $slider-text;
+  }
+  &_blocks{
+    display: flex;
+    flex-direction: row;
+    padding: 45px 0 0 0;
+
+  }
+  &_block-1{
+    width: 360px;
+    height: 320px;
+    text-align: center;
+    margin-left: 45px;
+  }
+  &_block-2{
+    width: 360px;
+    height: 320px;
+    text-align: center;
+    margin-left: 45px;
+  }
+  &_block-3{
+    width: 360px;
+    height: 320px;
+    text-align: center;
+    margin-left: 45px;
+  }
+  h3{
+    font-size: 24px;
+color: $text-slider;
+    font-weight: 400;
+  }
+  hr{
+    border: none;
+    background-color: $bottom-color;
+    color: $bottom-color;
+    width: 357px;
+    height: 1px;
+    margin: 24px 0 0 2px;
+  }
+  p{
+    font-size: 16px;
+    color: $text-slider;
+    font-weight: 400;
+    margin-top: 35px;
+  }
+}
