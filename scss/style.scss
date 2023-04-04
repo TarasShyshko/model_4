@@ -2,11 +2,6 @@
 @import "mixins";
 @import "variables";
 @import "body";
-@import "header";
-@import "application";
-@import "page-slider";
-@import "footer";
-
 .wrapper{
   width: 100%;
   min-height: 100%;
@@ -14,4 +9,10 @@
   display: flex;
   flex-direction: column;
 }
+@import "header";
+@import "application";
+@import "page-slider";
+@import "footer";
+
+
 

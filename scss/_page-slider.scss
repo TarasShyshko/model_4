@@ -19,25 +19,54 @@
     display: flex;
     flex-direction: row;
     padding: 45px 0 0 0;
-
+    justify-content: center;
+    .slick-arrow{
+      position: absolute;
+      font-size: 0;
+    }
   }
+
+  .slick-list.draggable{
+    overflow: hidden;
+    @media (max-width: $minWidth) {
+      width: 360px;
+      align-items: center;
+    }
+  }
+  .slick-track{
+    display: flex;
+    align-items: flex-start;
+    height: 360px;
+  }
+
+
+
   &_block-1{
     width: 360px;
-    height: 320px;
+    height: 360px;
     text-align: center;
-    margin-left: 45px;
+
+    @media (max-width: $minWidth){
+      margin-left: 1px;
+    }
   }
   &_block-2{
     width: 360px;
-    height: 320px;
+    height: 360px;
     text-align: center;
-    margin-left: 45px;
+    margin-left: 65px;
+    @media (max-width: $minWidth){
+      margin-left: 1px;
+    }
   }
   &_block-3{
     width: 360px;
-    height: 320px;
+    height: 360px;
     text-align: center;
-    margin-left: 45px;
+    margin-left: 65px;
+    @media (max-width: $minWidth){
+      margin-left: 1px;
+    }
   }
   h3{
     font-size: 24px;
@@ -51,11 +80,38 @@ color: $text-slider;
     width: 357px;
     height: 1px;
     margin: 24px 0 0 2px;
+    @media (max-width: $minWidth){
+      margin: 10px 0 0 2px;
+    }
   }
   p{
     font-size: 16px;
     color: $text-slider;
     font-weight: 400;
     margin-top: 35px;
+  }
+  .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 300px;
+  }
+  .slick-dots li{
+    list-style: none;
+    margin: 0 10px;
+  }
+
+  .slick-dots li.slick-active button{
+    background-color: #6f7982;
+    border: 1px solid #6f7982;
+  }
+
+  .slick-dots li button{
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    background-color: $slider-color;
+    border-radius: 50%;
+
   }
 }
