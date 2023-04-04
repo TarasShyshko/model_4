@@ -1,0 +1,83 @@
+@import "variables";
+@import "fonts";
+@import "mixins";
+.statistics{
+  background-color: $statistics-background;
+  &_block{
+    margin: 0 auto;
+    height: 310px;
+    max-width: $maxWidthContainer;
+    background-color: $statistics-background;
+    display: flex;
+    flex-direction: row;
+
+  }
+
+}
+
+.block{
+  padding: 0 42px 0 42px;
+  &_first-element{
+    padding: 85px 0 0 0;
+    width: 150px;
+    height: 145px;
+    text-align: center;
+    h3{
+      font-size: 24px;
+      font-weight: 400;
+      color: $statistics-text;
+    }
+    p{
+      font-size: 14px;
+      color: $statistics-text;
+    }
+  }
+  &_second-element{
+    padding: 85px 0 0 0;
+    width: 185px;
+    height: 145px;
+    margin-left: 140px;
+    text-align: center;
+    h3{
+      font-size: 24px;
+      font-weight: 400;
+      color: $statistics-text;
+    }
+    p{
+      font-size: 14px;
+      color: $statistics-text;
+    }
+  }
+  &_third-element{
+    padding: 85px 0 0 0;
+    width: 140px;
+    height: 145px;
+    margin-left: 145px;
+    text-align: center;
+    h3{
+      font-size: 24px;
+      font-weight: 400;
+      color: $statistics-text;
+    }
+    p{
+      font-size: 14px;
+      color: $statistics-text;
+    }
+  }
+  &_fourth-element{
+    padding: 85px 0 0 0;
+    width: 280px;
+    height: 145px;
+    margin-left: 95px;
+    text-align: center;
+    h3{
+      font-size: 24px;
+      font-weight: 400;
+      color: $statistics-text;
+    }
+    p{
+      font-size: 14px;
+      color: $statistics-text;
+    }
+  }
+}

@@ -4,14 +4,15 @@
 .page{
 
   background-color: $application-background;
+
   &_application{
     max-width: $maxWidthContainer;
     height: 665px;
     background-color: $application-background;
     margin: 0 auto;
-@media (max-width: $minWidth) {
-  height: 1050px;
-}
+    @media (max-width: $minWidth) {
+      height: 1050px;
+    }
   }
   &_left{
 

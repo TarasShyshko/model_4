@@ -24,6 +24,9 @@
       position: absolute;
       font-size: 0;
     }
+    @media (max-width: $minWidth){
+      margin: 0 0 0 -130px;
+    }
   }
 
   .slick-list.draggable{
@@ -94,7 +97,7 @@ color: $text-slider;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 300px;
+    margin: 0 0 -300px -220px;
   }
   .slick-dots li{
     list-style: none;

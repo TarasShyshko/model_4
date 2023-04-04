@@ -14,7 +14,7 @@ $(document).ready(function (){
                     centerMode:true,
                     fade: true,
                     autoplay: true,
-                    speed:4000,
+                    speed:1000,
                     dots: true,
                 }
             }
