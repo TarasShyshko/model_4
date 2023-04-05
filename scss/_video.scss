@@ -38,7 +38,6 @@ background-color: $video-background;
   &_vid{
     text-align: center;
     padding-top: 30px;
-
     @media (max-width: $minWidth){
       max-width: 100%;
      height: auto;

@@ -1,0 +1,86 @@
+@import "fonts";
+@import "mixins";
+@import "variables";
+.mentor{
+  background-color: $mentor-background;
+  &_slider{
+    background-color: $mentor-background;
+    margin: 0 auto;
+    height: 610px;
+    max-width: $maxWidthContainer;
+  }
+  h3 {
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    padding: 75px 0 0 0;
+  }
+  &_element{
+    .slick-arrow{
+      position: absolute;
+      font-size: 0;
+    }
+    .slick-list{
+      overflow: hidden;
+    }
+    .slick-track{
+      display: flex;
+    }
+
+  }
+  &_text{
+
+    h5{
+      font-size: 20px;
+      color: $mentor-author;
+      margin: -300px 0 0 400px;
+    }
+    hr{
+      background-color: $mentor-text-2;
+      color: $mentor-text-2;
+      width: 670px;
+      margin: 20px 0 0 400px;
+@media(max-width: $minWidth){
+  margin: 5px 0 0 400px;
+  width: 500px;
+}
+    }
+    h4{
+      width: 670px;
+      height: 300px;
+      font-size: 16px;
+      font-weight: 400;
+      color: $mentor-text;
+      margin: 35px 0 0 400px;
+      @media(max-width: $minWidth){
+        width: 550px;
+        font-size: 14px;
+        margin: 10px 0 0 400px;
+      }
+    }
+  }
+  .slick-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5px;
+  }
+  .slick-dots li{
+    list-style: none;
+    margin: 0 10px;
+  }
+
+  .slick-dots li.slick-active button{
+    background-color: #6f7982;
+    border: 1px solid #6f7982;
+  }
+
+  .slick-dots li button{
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    background-color: $slider-color;
+    border-radius: 50%;
+
+  }
+}
