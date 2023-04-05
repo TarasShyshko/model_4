@@ -20,4 +20,11 @@ $(document).ready(function (){
             }
         ]
     });
+    $('.commit_element').slick({
+       slidesToShow: 1,
+        fade: true,
+        autoplay: true,
+        speed:4000,
+        dots:true,
+    });
 });
