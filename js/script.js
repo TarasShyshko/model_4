@@ -4,7 +4,6 @@ $(document).ready(function (){
     });
     $('.slider_blocks').slick({
         slidesToShow: 3,
-
         responsive:[
             {
                 breakpoint: 1210,
@@ -20,6 +19,7 @@ $(document).ready(function (){
             }
         ]
     });
+
     $('.commit_element').slick({
        slidesToShow: 1,
         fade: true,

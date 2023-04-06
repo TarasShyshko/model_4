@@ -8,12 +8,22 @@
     margin: 0 auto;
     height: 610px;
     max-width: $maxWidthContainer;
+    img{
+      @media(max-width: $minWidth){
+        width: 150px;
+        height: 150px;
+        margin: 10px 0 0 415px;
+      }
+    }
   }
   h3 {
     font-size: 30px;
     font-weight: 400;
     text-align: center;
     padding: 75px 0 0 0;
+    @media(max-width: $minWidth){
+      padding: 35px 0 0 0;
+    }
   }
   &_element{
     .slick-arrow{
@@ -40,9 +50,10 @@
       color: $mentor-text-2;
       width: 670px;
       margin: 20px 0 0 400px;
+
 @media(max-width: $minWidth){
-  margin: 5px 0 0 400px;
-  width: 500px;
+  width: 425px;
+  margin: 295px 0 0 282px;;
 }
     }
     h4{
@@ -53,9 +64,10 @@
       color: $mentor-text;
       margin: 35px 0 0 400px;
       @media(max-width: $minWidth){
-        width: 550px;
+        width: 425px;
         font-size: 14px;
-        margin: 10px 0 0 400px;
+        margin: 0 0 0 285px;
+        padding: 10px 0 0 0;
       }
     }
   }

@@ -60,13 +60,19 @@ html, body {
 /*- FOOTER -*/
 .header {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
-  z-index: 10;
+  z-index: 10000;
 }
 
-.header_content {
-  max-width: 1220px;
-  margin: 0 auto;
+.header {
+  background-color: #fff;
+  width: 100%;
+  position: fixed;
   height: 100px;
+}
+.header_content {
+  width: 1220px;
+  height: 100%;
+  margin: 0 auto;
   padding: 0px 15px;
   background-color: #fff;
 }
@@ -85,7 +91,7 @@ html, body {
 @media (max-width: 1210px) {
   .header._active {
     width: 100%;
-    height: 330px;
+    height: 350px;
   }
 }
 
@@ -115,7 +121,7 @@ html, body {
 }
 @media (max-width: 1210px) {
   .menu_list {
-    margin: -55px 0 0 -800px;
+    margin: -55px 0 0 -1210px;
     text-align: center;
     background-color: #fff;
   }
@@ -149,7 +155,7 @@ html, body {
     width: 30px;
     height: 18px;
     cursor: pointer;
-    margin-left: 800px;
+    margin-left: 900px;
   }
   .icon-menu_span {
     width: 60px;
@@ -194,10 +200,11 @@ html, body {
 
 .main {
   flex: 1 1 auto;
+  margin-top: 100px;
 }
 @media (max-width: 1210px) {
   .main {
-    margin-top: -40px;
+    margin-top: 60px;
   }
 }
 
@@ -224,7 +231,7 @@ html, body {
 }
 @media (max-width: 1210px) {
   .page_application {
-    height: 1050px;
+    height: 100%;
   }
 }
 .left {
@@ -242,8 +249,10 @@ html, body {
 }
 @media (max-width: 1210px) {
   .left {
+    width: 100%;
+    height: 100%;
     text-align: center;
-    margin: 40px 0 0 245px;
+    margin: 40px 0 0 0;
   }
 }
 .left p {
@@ -251,9 +260,20 @@ html, body {
   color: #6f7982;
   padding: 10px 40px 0px 40px;
 }
+@media (max-width: 1210px) {
+  .left p {
+    padding: 10px 15px 0px 15px;
+    font-size: 49px;
+  }
+}
 .left h1 {
   font-size: 35px;
   color: black;
+}
+@media (max-width: 1210px) {
+  .left h1 {
+    font-size: 65px;
+  }
 }
 
 .right {
@@ -266,16 +286,29 @@ html, body {
   width: 8px;
   height: 8px;
 }
-.right input[type=text i], .right [type=tel i], .right [type=email i], .right [type=message] {
+.right input[type=text i], .right [type=tel i], .right [type=email i], .right [type=message i] {
   padding: 1px 10px;
   width: 590px;
   height: 50px;
   border-radius: 5px;
   border: solid black 1px;
 }
+@media (max-width: 1210px) {
+  .right input[type=text i], .right [type=tel i], .right [type=email i], .right [type=message i] {
+    width: 900px;
+    height: 100px;
+    padding: 0 15px 0 15px;
+    font-size: 30px;
+  }
+}
 .right li {
   color: #6f7982;
   padding: 5px;
+}
+@media (max-width: 1210px) {
+  .right li {
+    font-size: 32px;
+  }
 }
 .right a {
   color: #357ab7;
@@ -291,11 +324,20 @@ html, body {
   border: 1px;
 }
 @media (max-width: 1210px) {
+  .right button {
+    margin: 0 15px 0 15px;
+    width: 900px;
+    height: 100px;
+    font-size: 35px;
+  }
+}
+@media (max-width: 1210px) {
   .right {
-    margin: 40px 0 0 210px;
+    margin: 40px 0 0 0px;
+    padding: 0 15px 0 15px;
   }
   .right h3 {
-    margin-left: 150px;
+    font-size: 75px;
   }
 }
 
@@ -763,11 +805,23 @@ html, body {
   height: 610px;
   max-width: 1220px;
 }
+@media (max-width: 1210px) {
+  .mentor_slider img {
+    width: 150px;
+    height: 150px;
+    margin: 10px 0 0 415px;
+  }
+}
 .mentor h3 {
   font-size: 30px;
   font-weight: 400;
   text-align: center;
   padding: 75px 0 0 0;
+}
+@media (max-width: 1210px) {
+  .mentor h3 {
+    padding: 35px 0 0 0;
+  }
 }
 .mentor_element .slick-arrow {
   position: absolute;
@@ -792,8 +846,8 @@ html, body {
 }
 @media (max-width: 1210px) {
   .mentor_text hr {
-    margin: 5px 0 0 400px;
-    width: 500px;
+    width: 425px;
+    margin: 295px 0 0 282px;
   }
 }
 .mentor_text h4 {
@@ -806,9 +860,10 @@ html, body {
 }
 @media (max-width: 1210px) {
   .mentor_text h4 {
-    width: 550px;
+    width: 425px;
     font-size: 14px;
-    margin: 10px 0 0 400px;
+    margin: 0 0 0 285px;
+    padding: 10px 0 0 0;
   }
 }
 .mentor .slick-dots {
@@ -902,7 +957,7 @@ html, body {
 }
 @media (max-width: 1210px) {
   .blocks_first-element {
-    padding: 20px 0 0 0;
+    padding: 35px 0 0 0;
   }
   .blocks_first-element a {
     font-size: 14px;
