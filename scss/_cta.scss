@@ -1,13 +1,15 @@
 @import "variables";
 @import "fonts";
 @import "mixins";
-.cta{
-  background-color: $statistics-background;
-  &_blocks{
+
+.cta {
+  background-color: $cta-background;
+
+  &_blocks {
     margin: 0 auto;
     height: 200px;
     max-width: $maxWidthContainer;
-    background-color: $statistics-background;
+    background-color: $cta-background;
     display: flex;
     flex-direction: row;
     @media (max-width: $minWidth) {
@@ -19,121 +21,157 @@
 
 }
 
-.blocks{
+.blocks {
   padding: 0 42px 0px 42px;
-  @media (max-width: $minWidth){
+  @media (max-width: $minWidth) {
     align-items: center;
     justify-content: center;
     padding: 0 230px 0 230px;
   }
-  &_first-element{
+
+  &_first-element {
     padding: 45px 0 0 0;
     width: 150px;
     height: 145px;
     text-align: center;
-    img{
+
+    img {
       width: 30px;
       height: 30px;
     }
-    h3{
+
+    h3 {
       font-size: 24px;
       font-weight: 400;
-      color: $statistics-text;
+      color: $cta-text;
     }
-    p{
-      font-size: 14px;
-      color: $statistics-text;
+
+    div {
       margin-top: 20px;
-    }
-    @media (max-width: $minWidth){
-      padding: 20px 0 0 0;
-      p{
+
+      a {
         font-size: 14px;
-        color: $statistics-text;
+        color: $cta-text;
+
+      }
+    }
+
+    @media (max-width: $minWidth) {
+      padding: 20px 0 0 0;
+      a {
+        font-size: 14px;
+        color: $cta-text;
         margin-top: 5px;
       }
     }
   }
-  &_second-element{
+
+  &_second-element {
     padding: 45px 0 0 0;
     width: 185px;
     height: 145px;
     margin-left: 140px;
     text-align: center;
-    img{
+
+    img {
       width: 30px;
       height: 30px;
     }
-    h3{
+
+    h3 {
       font-size: 24px;
       font-weight: 400;
-      color: $statistics-text;
+      color: $cta-text;
     }
-    p{
-      font-size: 14px;
-      color: $statistics-text;
+
+    div {
       margin-top: 20px;
+
+      a {
+        font-size: 14px;
+        color: $cta-text;
+
+      }
     }
-    @media (max-width: $minWidth){
+
+    @media (max-width: $minWidth) {
       padding: 50px 0 0 0;
       margin: -195px 0 0 320px;
-      p{
+      a {
         margin-top: 5px;
       }
     }
   }
-  &_third-element{
+
+  &_third-element {
     padding: 45px 0 0 0;
     width: 180px;
     height: 145px;
     margin-left: 145px;
     text-align: center;
-    img{
+
+    img {
       width: 30px;
       height: 30px;
     }
-    h3{
+
+    h3 {
       font-size: 24px;
       font-weight: 400;
-      color: $statistics-text;
+      color: $cta-text;
     }
-    p{
-      font-size: 14px;
-      color: $statistics-text;
+
+    div {
       margin-top: 20px;
+
+      a {
+        font-size: 14px;
+        color: $cta-text;
+
+      }
     }
-    @media (max-width: $minWidth){
+
+    @media (max-width: $minWidth) {
       padding: 0px 0 0 0;
       margin: 15px 0 0 0px;
-      p{
+      a {
         margin-top: 5px;
       }
     }
   }
-  &_fourth-element{
+
+  &_fourth-element {
     padding: 45px 0 0 0;
     width: 280px;
     height: 145px;
     margin-left: 95px;
     text-align: center;
-    img{
+
+    img {
       width: 30px;
       height: 30px;
     }
-    h3{
+
+    h3 {
       font-size: 24px;
       font-weight: 400;
-      color: $statistics-text;
+      color: $cta-text;
     }
-    p{
-      font-size: 14px;
-      color: $statistics-text;
+
+    div {
       margin-top: 20px;
+
+      a {
+        font-size: 14px;
+        color: $cta-text;
+
+      }
     }
-    @media (max-width: $minWidth){
+
+    @media (max-width: $minWidth) {
       padding: 50px 0 0 0;
       margin: -195px 0 0 270px;
-      p{
+      a {
         margin-top: 5px;
       }
     }

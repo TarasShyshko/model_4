@@ -1,0 +1,27 @@
+@import "mixins";
+@import "variables";
+@import "fonts";
+
+.footer {
+  background-color: $footer-background;
+
+  &_element {
+    background-color: $footer-background;
+    height: 155px;
+    margin: 0 auto;
+    max-width: $maxWidthContainer;
+    text-align: center;
+
+    p {
+      padding: 55px 0 0 0;
+      color: $footer-text-1;
+    }
+
+    div {
+      padding: 20px 0 0 0;
+      a {
+        color: $footer-text-2;
+      }
+    }
+  }
+}

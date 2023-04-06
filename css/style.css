@@ -7,6 +7,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 @font-face {
   font-family: "Open Sans Regular";
 }
@@ -17,6 +18,8 @@
 /*- COMMIT-SLIDER -*/
 /*- VIDEO -*/
 /*- MENTOR -*/
+/*- CTA -*/
+/*- FOOTER -*/
 * {
   margin: 0;
   padding: 0;
@@ -53,6 +56,8 @@ html, body {
 /*- COMMIT-SLIDER -*/
 /*- VIDEO -*/
 /*- MENTOR -*/
+/*- CTA -*/
+/*- FOOTER -*/
 .header {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
   z-index: 10;
@@ -146,6 +151,13 @@ html, body {
     cursor: pointer;
     margin-left: 800px;
   }
+  .icon-menu_span {
+    width: 60px;
+    height: 50px;
+    margin: -25px 0 0 -15px;
+    background-color: #357ab7;
+    border-radius: 10px;
+  }
   .icon-menu span {
     transition: all 0.3s ease 0s;
     top: calc(50% - 1px);
@@ -153,7 +165,8 @@ html, body {
     position: absolute;
     width: 30px;
     height: 2px;
-    background-color: black;
+    background-color: #fff;
+    margin-top: 24px;
   }
   .icon-menu span:first-child {
     top: 0px;
@@ -168,7 +181,7 @@ html, body {
     position: absolute;
     width: 30px;
     height: 2px;
-    background: black;
+    background: #fff;
   }
   .icon-menu._active span:first-child {
     top: 0px;
@@ -182,6 +195,11 @@ html, body {
 .main {
   flex: 1 1 auto;
 }
+@media (max-width: 1210px) {
+  .main {
+    margin-top: -40px;
+  }
+}
 
 /*- HEADER -*/
 /*- APPLICATION -*/
@@ -190,6 +208,8 @@ html, body {
 /*- COMMIT-SLIDER -*/
 /*- VIDEO -*/
 /*- MENTOR -*/
+/*- CTA -*/
+/*- FOOTER -*/
 @font-face {
   font-family: "Open Sans Regular";
 }
@@ -289,6 +309,8 @@ html, body {
 /*- COMMIT-SLIDER -*/
 /*- VIDEO -*/
 /*- MENTOR -*/
+/*- CTA -*/
+/*- FOOTER -*/
 .slider {
   background-color: white;
 }
@@ -421,6 +443,8 @@ html, body {
 /*- COMMIT-SLIDER -*/
 /*- VIDEO -*/
 /*- MENTOR -*/
+/*- CTA -*/
+/*- FOOTER -*/
 .statistics {
   background-color: #4398db;
 }
@@ -431,6 +455,8 @@ html, body {
   background-color: #4398db;
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 @media (max-width: 1210px) {
   .statistics_block {
@@ -450,7 +476,6 @@ html, body {
   }
 }
 .block_first-element {
-  padding: 85px 0 0 0;
   width: 150px;
   height: 145px;
   text-align: center;
@@ -476,7 +501,6 @@ html, body {
   }
 }
 .block_second-element {
-  padding: 85px 0 0 0;
   width: 185px;
   height: 145px;
   margin-left: 140px;
@@ -502,7 +526,6 @@ html, body {
   }
 }
 .block_third-element {
-  padding: 85px 0 0 0;
   width: 140px;
   height: 145px;
   margin-left: 145px;
@@ -528,7 +551,6 @@ html, body {
   }
 }
 .block_fourth-element {
-  padding: 85px 0 0 0;
   width: 280px;
   height: 145px;
   margin-left: 95px;
@@ -564,6 +586,8 @@ html, body {
 /*- COMMIT-SLIDER -*/
 /*- VIDEO -*/
 /*- MENTOR -*/
+/*- CTA -*/
+/*- FOOTER -*/
 .commit {
   background-color: #fff;
 }
@@ -664,6 +688,8 @@ html, body {
 /*- COMMIT-SLIDER -*/
 /*- VIDEO -*/
 /*- MENTOR -*/
+/*- CTA -*/
+/*- FOOTER -*/
 .video {
   background-color: #f7f7f7;
 }
@@ -709,6 +735,10 @@ html, body {
   .video_vid {
     max-width: 100%;
     height: auto;
+    padding: 0 15px 0 15px;
+  }
+  .video_vid iframe {
+    max-width: 100%;
   }
 }
 
@@ -722,6 +752,8 @@ html, body {
 /*- COMMIT-SLIDER -*/
 /*- VIDEO -*/
 /*- MENTOR -*/
+/*- CTA -*/
+/*- FOOTER -*/
 .mentor {
   background-color: #fff;
 }
@@ -801,6 +833,11 @@ html, body {
   border-radius: 50%;
 }
 
+.map {
+  width: 100%;
+  height: 400px;
+}
+
 @font-face {
   font-family: "Open Sans Regular";
 }
@@ -811,6 +848,8 @@ html, body {
 /*- COMMIT-SLIDER -*/
 /*- VIDEO -*/
 /*- MENTOR -*/
+/*- CTA -*/
+/*- FOOTER -*/
 .cta {
   background-color: #4398db;
 }
@@ -854,16 +893,18 @@ html, body {
   font-weight: 400;
   color: white;
 }
-.blocks_first-element p {
+.blocks_first-element div {
+  margin-top: 20px;
+}
+.blocks_first-element div a {
   font-size: 14px;
   color: white;
-  margin-top: 20px;
 }
 @media (max-width: 1210px) {
   .blocks_first-element {
     padding: 20px 0 0 0;
   }
-  .blocks_first-element p {
+  .blocks_first-element a {
     font-size: 14px;
     color: white;
     margin-top: 5px;
@@ -885,17 +926,19 @@ html, body {
   font-weight: 400;
   color: white;
 }
-.blocks_second-element p {
+.blocks_second-element div {
+  margin-top: 20px;
+}
+.blocks_second-element div a {
   font-size: 14px;
   color: white;
-  margin-top: 20px;
 }
 @media (max-width: 1210px) {
   .blocks_second-element {
     padding: 50px 0 0 0;
     margin: -195px 0 0 320px;
   }
-  .blocks_second-element p {
+  .blocks_second-element a {
     margin-top: 5px;
   }
 }
@@ -915,17 +958,19 @@ html, body {
   font-weight: 400;
   color: white;
 }
-.blocks_third-element p {
+.blocks_third-element div {
+  margin-top: 20px;
+}
+.blocks_third-element div a {
   font-size: 14px;
   color: white;
-  margin-top: 20px;
 }
 @media (max-width: 1210px) {
   .blocks_third-element {
     padding: 0px 0 0 0;
     margin: 15px 0 0 0px;
   }
-  .blocks_third-element p {
+  .blocks_third-element a {
     margin-top: 5px;
   }
 }
@@ -945,18 +990,53 @@ html, body {
   font-weight: 400;
   color: white;
 }
-.blocks_fourth-element p {
+.blocks_fourth-element div {
+  margin-top: 20px;
+}
+.blocks_fourth-element div a {
   font-size: 14px;
   color: white;
-  margin-top: 20px;
 }
 @media (max-width: 1210px) {
   .blocks_fourth-element {
     padding: 50px 0 0 0;
     margin: -195px 0 0 270px;
   }
-  .blocks_fourth-element p {
+  .blocks_fourth-element a {
     margin-top: 5px;
   }
+}
+
+/*- HEADER -*/
+/*- APPLICATION -*/
+/*- PAGE-SLIDER -*/
+/*- STATISTICS -*/
+/*- COMMIT-SLIDER -*/
+/*- VIDEO -*/
+/*- MENTOR -*/
+/*- CTA -*/
+/*- FOOTER -*/
+@font-face {
+  font-family: "Open Sans Regular";
+}
+.footer {
+  background-color: #f7f7f7;
+}
+.footer_element {
+  background-color: #f7f7f7;
+  height: 155px;
+  margin: 0 auto;
+  max-width: 1220px;
+  text-align: center;
+}
+.footer_element p {
+  padding: 55px 0 0 0;
+  color: #6a9dc9;
+}
+.footer_element div {
+  padding: 20px 0 0 0;
+}
+.footer_element div a {
+  color: #8e8e8e;
 }
 /*# sourceMappingURL=style.css.map */

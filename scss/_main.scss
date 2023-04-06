@@ -1,6 +1,12 @@
-.main{
+@import "variables";
+
+.main {
   flex: 1 1 auto;
+  @media (max-width: $minWidth) {
+    margin-top: -40px;
+  }
 }
+
 @import "application";
 @import "page-slider";
 @import "statistics";
