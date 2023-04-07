@@ -10,6 +10,9 @@
     margin: 0 auto;
     height: 530px;
     max-width: $maxWidthContainer;
+  @media (max-width: $minWidth) {
+    height: auto;
+  }
   }
 
   &_element{
@@ -31,7 +34,8 @@
     justify-content: center;
     padding-top: 30px;
     @media (max-width: $minWidth){
-      padding-top: 30px;
+      margin-top: 25px;
+      padding: 200px 0 60px 0;
     }
   }
   .slick-dots li{
@@ -46,11 +50,14 @@
 
   .slick-dots li button{
     font-size: 0;
-    width: 10px;
-    height: 10px;
+    width: 13px;
+    height: 13px;
     background-color: $slider-color;
     border-radius: 50%;
-
+    @media(max-width: $minWidth){
+      width: 30px;
+      height: 30px;
+    }
   }
   h3 {
     font-size: 30px;
@@ -59,7 +66,8 @@
     text-align: center;
     padding: 65px 0 0 0;
     @media (max-width: $minWidth){
-      padding: 35px 0 0 0;
+      padding: 35px 90px 0 90px;
+      font-size: 50px;
     }
   }
 

@@ -4,19 +4,33 @@
 
 .slider {
   background-color: $slider-color;
-
+  @media (max-width: $minWidth){
+    height: auto;
+  }
   &_item {
     margin: 0 auto;
     height: 560px;
     max-width: $maxWidthContainer;
     background-color: $slider-color;
-  }
+    @media (max-width: $minWidth){
+      height: 1500px;
 
+    }
+  }
+img{
+  @media (max-width: $minWidth){
+    width: 150px;
+  }
+}
   &_text {
     padding: 70px 0 0 0;
     text-align: center;
     font-size: 30px;
     color: $slider-text;
+    @media (max-width: $minWidth){
+      margin: 70px 0 0 0;
+      font-size: 60px;
+    }
   }
 
   &_blocks {
@@ -30,15 +44,21 @@
       font-size: 0;
     }
 
-    @media (max-width: $minWidth) {
-      margin: 0 0 0 -130px;
+    .slick-dots {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      justify-content: center;
+      margin: 1120px 0 -300px 0px;
     }
+
   }
 
   .slick-list.draggable {
     overflow: hidden;
     @media (max-width: $minWidth) {
-      width: 360px;
+      max-width: 800px;
+      height: auto;
       align-items: center;
     }
   }
@@ -57,6 +77,7 @@
 
     @media (max-width: $minWidth) {
       margin-left: 1px;
+      height: 1200px;
     }
   }
 
@@ -67,6 +88,8 @@
     margin-left: 65px;
     @media (max-width: $minWidth) {
       margin-left: 1px;
+      height: 1200px;
+
     }
   }
 
@@ -77,6 +100,8 @@
     margin-left: 65px;
     @media (max-width: $minWidth) {
       margin-left: 1px;
+      height: 1200px;
+
     }
   }
 
@@ -84,6 +109,9 @@
     font-size: 24px;
     color: $text-slider;
     font-weight: 400;
+    @media (max-width: $minWidth){
+      font-size: 62px;
+    }
   }
 
   hr {
@@ -95,6 +123,7 @@
     margin: 24px 0 0 2px;
     @media (max-width: $minWidth) {
       margin: 10px 0 0 2px;
+      width: 800px;
     }
   }
 
@@ -103,14 +132,12 @@
     color: $text-slider;
     font-weight: 400;
     margin-top: 35px;
+    @media (max-width: $minWidth){
+      font-size: 55px;
+    }
   }
 
-  .slick-dots {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 0 -300px -220px;
-  }
+
 
   .slick-dots li {
     list-style: none;
@@ -124,8 +151,8 @@
 
   .slick-dots li button {
     font-size: 0;
-    width: 10px;
-    height: 10px;
+    width: 30px;
+    height: 30px;
     background-color: $slider-color;
     border-radius: 50%;
 

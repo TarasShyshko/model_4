@@ -11,14 +11,17 @@
     margin: 0 auto;
     max-width: $maxWidthContainer;
     text-align: center;
-
+    @media (max-width: $minWidth){
+      height: auto;
+    }
     p {
       padding: 55px 0 0 0;
       color: $footer-text-1;
+
     }
 
     div {
-      padding: 20px 0 0 0;
+      padding: 50px 0 50px 0;
       a {
         color: $footer-text-2;
       }

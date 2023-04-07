@@ -1,4 +1,10 @@
 .map{
   width: 100%;
   height: 400px;
+  @media (max-width: $minWidth) {
+    height: 900px;
+    iframe{
+      height: 900px;
+    }
+  }
 }
