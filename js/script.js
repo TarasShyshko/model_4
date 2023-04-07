@@ -18,6 +18,8 @@ $(document).ready(function (){
                 }
             }
         ]
+
+
     });
 
     $('.commit_element').slick({
