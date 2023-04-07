@@ -1306,7 +1306,12 @@ html, body {
   color: #6a9dc9;
 }
 .footer_element div {
-  padding: 50px 0 50px 0;
+  padding: 20px 0 50px 0;
+}
+@media (max-width: 1210px) {
+  .footer_element div {
+    padding: 50px 0 50px 0;
+  }
 }
 .footer_element div a {
   color: #8e8e8e;

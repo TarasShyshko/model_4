@@ -21,7 +21,10 @@
     }
 
     div {
-      padding: 50px 0 50px 0;
+      padding: 20px 0 50px 0;
+      @media (max-width: $minWidth){
+        padding: 50px 0 50px 0;
+      }
       a {
         color: $footer-text-2;
       }
