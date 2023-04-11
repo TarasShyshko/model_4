@@ -26,14 +26,14 @@ $(document).ready(function (){
        slidesToShow: 1,
         fade: true,
         autoplay: true,
-        speed:10000,
+        speed:4000,
         dots:true,
     });
     $('.mentor_element').slick({
         slidesToShow: 1,
         fade: true,
         autoplay: true,
-        speed:10000,
+        speed:4000,
         dots:true,
     });
 });
